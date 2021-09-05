@@ -133,35 +133,7 @@ class TMExample extends React.Component {
             transform: [{translate: [0, 0, -5]}]
           }}> App Realidade Virtual </Text>
 
-<Text style={{fontSize: 0.2, textAlign: 'center',flex: 1,
-            width: 2,
-            flexDirection: 'column',
-            alignItems: 'stretch',
-            layoutOrigin: [0.5, 0.5],
-            backgroundColor: '#CF3C7E',
-            transform: [{translate: [0, 1, -5]}]
-          }}> App Realidade Virtual </Text>
-
-<Text style={{fontSize: 0.2, textAlign: 'center',flex: 1,
-            width: 2,
-            height:2,
-            flexDirection: 'column',
-            alignItems: 'stretch',
-            layoutOrigin: [0.5, 0.5],
-            backgroundColor: '#CF3C7E',
-            transform: [{translate: [0, 2, -5]}]
-          }}> Missão </Text>
-
-
-
-
-
-
-
-
-
-
-        {this.state.current_scene['navigations'].map(function(item,i){
+         {this.state.current_scene['navigations'].map(function(item,i){
               return  <Mesh  key={i}
                             style={{
                                 layoutOrigin: [0.5, 0.5],
