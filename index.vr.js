@@ -133,6 +133,8 @@ class TMExample extends React.Component {
             transform: [{translate: [0, 0, -5]}]
           }}> App Realidade Virtual </Text>
 
+       
+
          {this.state.current_scene['navigations'].map(function(item,i){
               return  <Mesh  key={i}
                             style={{
@@ -160,6 +162,7 @@ class TMExample extends React.Component {
                                                    backgroundColor: '#FFFFFFD9'
                                             }}>
                                      </VrButton>
+                                   
                               </VrButton>
                       </Mesh>
           })}
